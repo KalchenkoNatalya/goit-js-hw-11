@@ -57,7 +57,8 @@ function onSubmitSearch(event) {
 }
 
 function createImagesOnPage(images) {
-  refs.gallery.insertAdjacentHTML('beforeend', createMarcup(images));
+  const marcup = createMarcup(images)
+  refs.gallery.insertAdjacentHTML('beforeend', marcup);
 }
 
 function onLoadMore() {
