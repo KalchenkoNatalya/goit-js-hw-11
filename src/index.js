@@ -34,7 +34,7 @@ function onSubmitSearch(event) {
         throw new Error();
       } else {
         Notiflix.Notify.success(`"Hooray! We found ${totalHits} images."`);
-        // console.log(hits);
+        console.log(hits);
         return hits;
       }
     })
